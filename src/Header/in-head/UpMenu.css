@@ -1,0 +1,46 @@
+ .social-box li{
+    width: 30px;
+    height: 30px;
+    background-color: var(--ay-primary);
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 3px !important;
+}
+.social-box i{
+    font-size: 13px;
+}
+.search-box i{
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    color: var(--ay-primary);
+}
+.up-menu{
+    background-color: #fafafa;
+    color:#5d6678;
+}
+.contact-box i{
+    color: var(--ay-primary);
+    font-size: 15px;
+}
+.social-box{
+    border-left: 1px solid #e1e1e1;
+   
+}
+.contact-box li{
+border-left: 1px solid #e1e1e1;
+padding-left: 10px;
+line-height: 35px;
+}
+.contact-box li:last-child{
+border-left: none;
+}
+.search-box input{
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    background-color: transparent;
+    padding: 5px 10px;
+    outline: none;
+}
