@@ -1,4 +1,6 @@
 import React from 'react'
+import NavLi from './NavLi'
+import NavUl from './NavUl'
 import  './Nav.css'
 
 
@@ -17,24 +19,15 @@ export default function Nav() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
+            
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse flex-grow-0" id="main_nav">
-            <ul className="navbar-nav">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">صفحه اصلی </a>
-              </li>
-
-              <li className="nav-item dropdown" id="myDropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  data-bs-toggle="dropdown"
-                >
-                  صفحات
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#"> کاربران </a></li>
+            <NavUl class="navbar-nav">
+             <NavLi desc="صفحه اصلی"/>
+             <NavLi desc="صفحات" class="nav-item dropdown" dataBsToggle="dropdown">
+              <NavUl class="dropdown-menu">
+                <NavLi desc="کاربران" class="nav-item dropdown-menu"/>
                   <li>
                     <a className="dropdown-item dropdown-toggle" href="#">
                       زیر منوی 1
@@ -67,17 +60,13 @@ export default function Nav() {
                       </li>
                     </ul>
                   </li>
-                  <li><a className="dropdown-item" href="#">زیر منوی 3 </a></li>
-                  <li><a className="dropdown-item" href="#"> زیر منوی 4 </a></li>
-                </ul>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#"> درباره ما </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#"> تماس با ما </a>
-              </li>
-            </ul>
+                  <NavLi desc="زیر منو 2"/>
+                  <NavLi desc="زیر منو 3"/>
+                </NavUl>
+             </NavLi>
+              <NavLi desc="تماس باما " notif="0" />
+              <NavLi desc="درباره ما"/>
+            </NavUl>
           </div>
           <div
             className="btn ay-btn-outline-primary rounded-pill py-2 px-4 order-1 me-2 me-lg-0"
