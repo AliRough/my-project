@@ -1,11 +1,14 @@
 import React from 'react'
 import UpMenu from './in-head/UpMenu'
+import Nav from './in-head/Nav'
 
 
 export default function Header() {
   return (
-      <div>
-        <UpMenu></UpMenu>
-      </div>
+    <header>
+    <UpMenu></UpMenu>
+    <Nav></Nav>
+  </header>
   )
 }
+
